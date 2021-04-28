@@ -1,0 +1,61 @@
+
+/* Just effecting the background of center page */
+#main {
+  background-color: greenyellow;
+  padding: 20px;
+  
+}
+
+body {
+  background-color: gray;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 1.7em;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 10px;
+  padding: 5px;
+}
+h2 {
+  font-size: 2.5em;
+  margin: 10px;
+  padding: 5px;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 10px;
+  padding: 5px;
+}
+
+#aboutMe {
+  background-color: hotpink;
+}
+
+#quizTime {
+  background-color: lightblue;
+}
+
+p {
+  margin: 10px;
+  padding: 5px;
+}
+.quiz {
+  background-color: cornflowerblue;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  margin: 5%;
+  padding: 2%;
+  font-family: fantasy;
+  
+}
+
+.button {
+  margin: 50px;
+  padding: 50px;
+  font-size: 1.17em;
+  font-family: fantasy;
+}
