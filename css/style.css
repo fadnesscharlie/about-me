@@ -7,15 +7,15 @@
 
 
 #main {
-  background-color: greenyellow;
+  background-color: rgb(87, 5, 5);
   padding: 20px;
   
 }
 
 body {
-  background-color: gray;
-  margin-left: 30%;
-  margin-right: 30%;
+  background-color: rgb(53, 3, 3);
+  width: 960px;
+  margin:auto;
   font-size: 1.7em;
   font-family: monospace;
 }
@@ -26,6 +26,7 @@ h1 {
   padding: 5px;
   color: black;
 }
+
 h2 {
   font-size: 2.5em;
   margin: 10px;
@@ -39,7 +40,8 @@ h3 {
 }
 
 #aboutMe {
-  background-color: hotpink;
+  border: 4px solid black;
+  background-color: rgb(85, 23, 97);
 }
 
 #quizTime {
@@ -66,31 +68,51 @@ p {
   font-family: fantasy;
 }
 
-section div ol {
+
+
+
+section div ol li {
   list-style-type:decimal;
   margin-left: 25px;
   padding-left: 25px;
-}
-
-section div ul {
-  list-style-type:square;
-  margin-left: 25px;
-  padding-left: 25px;
+  background-color: rgb(143, 226, 147);
 }
 
 section div ul li {
   list-style-type:square;
   margin-left: 25px;
   padding-left: 25px;
-  background-color:darkgreen;
+  background-color:rgb(27, 102, 27);
+}
+
+#o-list {
+  background-color: rgb(236, 100, 38);
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(49, 136, 139);
+  padding: 25px;
+  margin: 10px;
+  text-emphasis: rgba(209, 62, 86, 0.486);
+
 }
 
 #u-list {
-  background-color: cadetblue;
+  background-color: rgb(209, 136, 41);
   border-width: 10px;
   border-style: solid;
-  border-color: brown;
-  padding: 10px;
+  border-color: rgb(49, 136, 139);
+  padding: 25px;
+  margin: 10px;
+  text-emphasis: pink;
+
+}
+
+#e-list {
+  background-color: rgb(192, 184, 65);
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(49, 136, 139);
+  padding: 25px;
   margin: 10px;
   text-emphasis: pink;
 

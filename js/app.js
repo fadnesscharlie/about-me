@@ -1,235 +1,111 @@
 'use strict';
-//####### 5 questions about me  ###########
+//####### 7 questions about me  ###########
 
-
+let correctQuest = 0;
+let randomNumber = Math.floor(Math.random() * 11);
+let i;
+let j = 4;
+let o;
+let f;
+let k = 6;
+let correctGuess = false;
+let newArray = [
+  [0, 'yes', 'y'],
+  [1, 'no', 'n'],
+  [2, randomNumber],
+  ['teriyaki', 'pho', 'thai', 'steak']
+];
+console.log(`Cheating message! Random Number is: ${newArray[2][1]}`);
 
 // First Question
 let catLower = prompt('Do you think I like Cats? Please enter Yes or No').toLowerCase();
-// console.log(catLower + "1")
-if (catLower === 'yes' || catLower === 'y') {
+if (catLower === newArray[0][1] || catLower === newArray[0][2]) {
   alert('That\'s amazing! You are spot on!');
+  correctQuest++;
 } else {
   alert('I\'m so sorry you got this wrong... You must be a dog person huh...');
 }
 
 // Second Question
 let bake = prompt('Do you think I like to Bake? Please enter Yes or No').toLowerCase();
-// console.log(bake + "1")
-if (bake === 'yes' || bake === 'y') {
+if (bake === newArray[0][1] || bake === newArray[0][2]) {
   alert('That\'s amazing! I love Pastries');
+  correctQuest++;
 } else {
-  alert('I\'m so sorry you got this wrong... You must be a dog person huh...');
+  alert('You sir, need some sugar in your life! But, if you can not, I will still be friends with you.');
 }
 
 //Third Question
 let live = prompt('Do I live in Bothell, WA? Please enter Yes or No').toLowerCase();
-// console.log(live + "1")
-if (live === 'yes' || live === 'y') {
-  alert('Your correct! I actually live in Renton!');
-} else {
+if (live === newArray[1][1] || live === newArray[1][2]) {
   alert('You... You didn\'t read... my... about me... Seriously?');
+  correctQuest++;
+} else {
+  alert('Your correct! I actually live in Renton!');
 }
 
 //Fourth Question
 let outDoor = prompt('Do you think I like the outdoors? Please enter Yes or No').toLowerCase();
-// console.log(outDoor + "1")
-if (outDoor === 'yes' || outDoor === 'y') {
+if (outDoor === newArray[0][1] || outDoor === newArray[0][2]) {
   alert('Your correct! I actually like the outdoors!');
+  correctQuest++;
 } else {
   alert('Looks like you need to go outdoors more then me... I like going outdoors..?');
 }
 
 //Fifth Question
 let catMany = prompt('Do you think I have over 10 cats? Please enter Yes or No').toLowerCase();
-// console.log(catMany + "1")
-if (catMany === 'yes' || catMany === 'y') {
+if (catMany === newArray[1][1] || catMany === newArray[1][2]) {
   alert('Your correct! I do not have 10! I just have 2!');
+  correctQuest++;
 } else {
   alert('Although it would be great to have 10, I do not have 10!');
 }
 
-
-
 //Sixth Question
-
-// // let guessing = prompt('Pick a Number Between 1 and 10');
-// // Lucky Number will be 5!
-// let i;
-// // if (guessing !== '5') {
-// //   console.log(guessing + ' guessed first time');
-// for (i = 1; i < 4; i++) {
-//   let guessing = prompt('Pick a Number Between 1 and 10');
-//   if (guessing === '5') {
-//     alert('Your correct!');
-//     console.log(guessing + ' correct');
-//     break;
-//   }
-//   else if (guessing <= 4) {
-//     // let guessing = prompt('Pick a Number Between 1 and 10');
-//     alert('Your guess was too low!!');
-//     console.log(guessing + ' else if under');
-//   }
-//   else if (guessing >= 6 && guessing <= 10) {
-//     // let guessing = prompt('Pick a Number Between 1 and 10');
-//     alert('Your guess was to high!');
-//     console.log(guessing + ' else if high');
-//   }
-//   else if (guessing >= 11) {
-//     // let guessing = prompt('Pick a Number Between 1 and 10');
-//     alert('Your guess was over 10!');
-//     console.log(guessing + ' else if over');
-//   }
-//   else {
-//     // let guessing = prompt('Pick a Number Between 1 and 10');
-//     alert('You did not pick a number!');
-//     console.log(guessing + ' else');
-//   }
-// }
-// console.log('The correct answer was 5!');
-// console.log('You guessed ' + i + ' times!');
-// // console.log(guesses1);
-
-
-
-
+// Four Attempts
+for (i = 0; i < 4; i++) {
+  let guessing = prompt('Pick a Number Between 1 and 10');
+  j--;
+  if (guessing == newArray[2][1]) {
+    alert(`Your correct! ${guessing} is correct!`);
+    correctQuest++;
+    break;
+  }
+  else if (guessing <= newArray[2][1]) {
+    alert(`Your guess of ${guessing} was too low!! You have ${j} guesses left`);
+  }
+  // else {
+  else if (guessing >= newArray[2][1]) {
+    alert(`Your guess of ${guessing} was too high!! You have ${j} guesses left`);
+  }
+}
+alert(`The correct answer was ${newArray[2][1]}!`);
+alert(`You guessed a total of ${i + 1} times!`);
 
 // 7th Question
-
-// let o;
-// for (o = 1; o < 6; o++) {
-//   let guessing = prompt('Pick a Number Between 1 and 10');
-//   if (guessing === '5') {
-//     alert('Your correct!');
-//     console.log(guessing + ' correct');
-//     break;
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Code taken for reference. Delete when finished.
-// var i;
-// for (i = 0; i < cars.length; i++) {
-//   text += cars[i] + "<br>";
-// }
-
-
-
-/*
-// First Quiz will be if I like Cats
-// eslint-disable-next-line no-unused-vars
-let quizOne = function() {
-  let catLower = prompt('Do you think I like Cats? Please enter Yes or No').toLowerCase();
-  // console.log(catLower + "1")
-  while (catLower !== 'no' && catLower !== 'yes' && catLower !== 'y' && catLower !== 'n') {
-    catLower = prompt('I\'m sorry, please enter a Yes or No.');
-    catLower = catLower.toLowerCase();
-  // console.log(catLower + "2")
+// Six attempts
+for (o = 1; o <= 6; o++) {
+  k--;
+  if (correctGuess) {
+    break;
   }
-  // console.log(catLower + "3")
-  if (catLower === 'yes' || catLower === 'y') {
-    alert('That\'s amazing! You are spot on!');
-  } else if (catLower === 'no' || catLower === 'n') {
-    alert('I\'m so sorry you got this wrong... You must be a dog person huh...');
-  } else {
-    alert('It went to else...');
+  let guessing = prompt('What do you think might be one of my favorite foods?').toLowerCase();
+  for (f = 0; f < newArray[3].length; f++) {
+    if (guessing === newArray[3][f]) {
+      alert(`Your guess of ${guessing} is correct! Nicely done!`);
+      correctQuest++;
+      correctGuess = true;
+      break;
+    }
   }
-};
+  if (guessing === newArray[3][f]) {
+    continue;
+  }
+  else {
+    alert(`Your answer ${guessing} is wrong, please pick again! You have ${k} guesses left`);
+  }
+}
 
-// Second Quix will be if I like to bake
-// eslint-disable-next-line no-unused-vars
-let quizTwo = function() {
-  let bake = prompt('Do you think I like to Bake? Please enter Yes or No').toLowerCase();
-  // console.log(bake + "1")
-  while (bake !== 'no' && bake !== 'yes' && bake !== 'y' && bake !== 'n') {
-    bake = prompt('I\'m sorry, please enter a Yes or No.');
-    bake = bake.toLowerCase();
-    // console.log(bake + "2")
-  }
-  // console.log(bake + "3")
-  if (bake === 'yes' || bake === 'y') {
-    alert('That\'s amazing! I love Pastries');
-  } else if (catLower === 'no' || catLower === 'n') {
-    alert('I\'m so sorry you got this wrong... You must be a dog person huh...');
-  } else {
-    alert('It went to else...');
-  }
-};
-
-// Third Quiz will be if I live in bothell
-// eslint-disable-next-line no-unused-vars
-let quizThree = function() {
-  let live = prompt('Do I live in Bothell, WA? Please enter Yes or No').toLowerCase();
-  // console.log(live + "1")
-  while (live !== 'no' && live !== 'yes' && live !== 'y' && live !== 'n') {
-    live = prompt('I\'m sorry, please enter a Yes or No.');
-    live = live.toLowerCase();
-    // console.log(live + "2")
-  }
-  // console.log(live + "3")
-  if (live === 'yes' || live === 'y') {
-    alert('Your correct! I actually live in Renton!');
-  } else if (live === 'no' || live === 'n') {
-    alert('You... You didn\'t read... my... about me... Seriously?');
-  } else {
-    alert('It went to else...');
-  }
-};
-
-// Fourth Quiz will be if I like outdoors
-// eslint-disable-next-line no-unused-vars
-let quizFour = function() {
-  let outDoor = prompt('Do you think I like the outdoors? Please enter Yes or No').toLowerCase();
-  // console.log(outDoor + "1")
-  while (outDoor !== 'no' && outDoor !== 'yes' && outDoor !== 'y' && outDoor !== 'n') {
-    outDoor = prompt('I\'m sorry, please enter a Yes or No.');
-    outDoor = outDoor.toLowerCase();
-    // console.log(outDoor + "2")
-  }
-  // console.log(outDoor + "3")
-  if (outDoor === 'yes' || outDoor === 'y') {
-    alert('Your correct! I actually like the outdoors!');
-  } else if (outDoor === 'no' || outDoor === 'n') {
-    alert('Looks like you need to go outdoors more then me... I like going outdoors..?');
-  } else {
-    alert('It went to else...');
-  }
-};
-
-// Fifth Quiz will be if I have 10 Cats
-// eslint-disable-next-line no-unused-vars
-let quizFive = function() {
-  let catMany = prompt('Do you think I have over 10 cats? Please enter Yes or No').toLowerCase();
-  // console.log(catMany + "1")
-  while (catMany !== 'no' && catMany !== 'yes' && catMany !== 'y' && catMany !== 'n') {
-    catMany = prompt('I\'m sorry, please enter a Yes or No.');
-    catMany = catMany.toLowerCase();
-    // console.log(catMany + "2")
-  }
-  // console.log(catMany + "3")
-  if (catMany === 'yes' || catMany === 'y') {
-    alert('Your correct! I do not have 10! I just have 2!');
-  } else if (catMany === 'no' || catMany === 'n') {
-    alert('Although it would be great to have 10, I do not have 10!');
-  } else {
-    alert('It went to else...');
-  }
-};
-
-
-*/
+alert(`The correct answers are: ${newArray[3]}`);
+alert(`The amount of questions answered correctly was ${correctQuest}`);
