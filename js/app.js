@@ -84,7 +84,7 @@ for (i = 0; i < 4; i++) {
     alert(`Your guess of ${guessing} was too high!! You have ${q6GuessLeft} guesses left`);
   }
   else { // In case the user does not insert a number
-    alert('Please enter a number between 1 and 10');
+    alert(`Please enter a number between 1 and 10 You have ${q6GuessLeft} guesses left`);
   }
 }
 alert(`The correct answer was ${arrayOfAnswers[2][0]}!`); // returns the answer of random number
