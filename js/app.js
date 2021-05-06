@@ -65,6 +65,7 @@ if (catMany === arrayOfAnswers[1][0] || catMany === arrayOfAnswers[1][1]) {
 } else {
   alert('Although it would be great to have 10, I do not have 10!');
 }
+
 //Sixth Question
 // Four Attempts
 let i; // Line 91 will not run if calling in for loop
@@ -115,3 +116,6 @@ for (let o = 1; o <= 6; o++) { // Running 6 times for 6 total guesses
 }
 alert(`The correct answers are: ${arrayOfAnswers[3]}`); // Displays correct answers
 alert(`The amount of questions answered correctly was ${correctQuest}`);
+
+
+// test
