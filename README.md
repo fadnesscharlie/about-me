@@ -18,6 +18,11 @@ Charlie Fadness
 
 Philip Murphy, Ryan Galloway, Norton Pengra
 
+### Paircoding Partner
+
+I was Navigator on: https://github.com/fadnesscharlie/about-me-1/pulls
+Connor Boyce was Driver on: https://github.com/fadnesscharlie/about-me/pull/1
+
 ### Links and Resources
 
 * [Math floor and Random](https://www.w3schools.com/js/js_random.asp)
@@ -29,3 +34,5 @@ Philip Murphy, Ryan Galloway, Norton Pengra
 * Lab 3 was more difficult but not as bad as I had thought using some of the time to work ahead and being able to use some old code and reference for very simular things.
 * Learning and how to use Arrays took a little while, but was actaully fun and not as tedius as I once thought.
 * The most difficult thing I had come across was not displaying a guess again alert inside of a for-if-else statement. With some help from Norton and past knowledge, finally after a few attempts and help I found my answer with continue statements.
+* Lab 4 made things more interesting. Adding functions was quite easy. Putting everything into an array was somewhat difficult with template literals, and so we by passed that by concatinating just the strings and left the variable.
+* I was sad I was not able to make the code more dry, but I may attempt it later before lab 5
