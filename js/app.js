@@ -117,5 +117,4 @@ for (let o = 1; o <= 6; o++) { // Running 6 times for 6 total guesses
 alert(`The correct answers are: ${arrayOfAnswers[3]}`); // Displays correct answers
 alert(`The amount of questions answered correctly was ${correctQuest}`);
 
-
 // test
