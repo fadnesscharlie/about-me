@@ -1,15 +1,40 @@
 
 /* Just effecting the background of center page */
-
+@font-face {
+  font-family: Dancing_Script;
+  src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
 * {
   color: black;
+  
+
 }
 
+#nav {
+  margin: 20px;
+  padding: 15px;
+  background-color: rgb(161, 160, 152, 0.8);
+  border: 1px solid rgb(31, 31, 31);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav * {
+  inset-inline: unset;
+  text-decoration: none;
+  margin-right: 9%;
+ }
 
 #main {
-  background-color: rgb(87, 5, 5);
   padding: 20px;
-  
+  width: 960px;
+  border: 10px solid rgb(149, 149, 149);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color:rgb(244, 246, 246) ;
+  background-image: url(../img/white-background-with-flower.jpg);
+  background-repeat: no-repeat;
+ 
 }
 
 body {
@@ -18,6 +43,9 @@ body {
   margin:auto;
   font-size: 1.7em;
   font-family: monospace;
+  background-image: url(https://images.unsplash.com/photo-1553526777-5ffa3b3248d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  
+
 }
 
 h1 {
@@ -25,95 +53,84 @@ h1 {
   margin: 10px;
   padding: 5px;
   color: black;
+  font-family: Dancing_Script;
 }
 
 h2 {
   font-size: 2.5em;
   margin: 10px;
   padding: 5px;
+  font-family: Dancing_Script;
 }
 
 h3 {
   font-size: 2em;
   margin: 10px;
   padding: 5px;
+  font-family: Dancing_Script;
+}
+
+#whole {
+  margin-right: auto;
+  border: 2px;
+  border-color: rgb(149, 149, 149);
+  width: 960px;
+  display: flex;
+}
+
+#bullets {
+  flex: 30%;
+  background-color:rgb(244, 246, 246, 0) ;
 }
 
 #aboutMe {
-  border: 4px solid black;
-  background-color: rgb(85, 23, 97);
-}
-
-#quizTime {
-  background-color: lightblue;
+  border: 1px solid rgb(31, 31, 31);
+  background-color: rgb(161, 160, 152, 0.5);
+  margin: auto;
+  /* width: 960px; */
+  flex: 70%;
 }
 
 p {
   margin: 10px;
   padding: 5px;
 }
-.quiz {
-  background-color: cornflowerblue;
-  /* margin-left: 10%;
-  margin-right: 10%; */
-  margin: 5%;
-  padding: 2%;
-  font-family: fantasy;
-}
 
-.button {
-  margin: 50px;
-  padding: 50px;
-  font-size: 1.17em;
-  font-family: fantasy;
-}
-
-
-
-
-section div ol li {
+main aside div ol li {
   list-style-type:decimal;
   margin-left: 25px;
-  padding-left: 25px;
-  background-color: rgb(143, 226, 147);
+  padding-left: 1px;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+
 }
 
-section div ul li {
+main aside div ul li {
   list-style-type:square;
-  margin-left: 25px;
-  padding-left: 25px;
-  background-color:rgb(27, 102, 27);
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: 0.9em;
+  margin-bottom: 5px;
 }
 
-#o-list {
-  background-color: rgb(236, 100, 38);
-  border-width: 10px;
-  border-style: solid;
-  border-color: rgb(49, 136, 139);
+.list {
+  background-color: rgb(161, 160, 152, 0.5);
+  border: 1px solid rgb(31, 31, 31);
   padding: 25px;
   margin: 10px;
-  text-emphasis: rgba(209, 62, 86, 0.486);
-
+  font-size: 0.9em;
 }
 
-#u-list {
-  background-color: rgb(209, 136, 41);
-  border-width: 10px;
-  border-style: solid;
-  border-color: rgb(49, 136, 139);
-  padding: 25px;
-  margin: 10px;
-  text-emphasis: pink;
 
+#self {
+  margin-top: 30px;
+  margin-left: 40px;
+  border: 3px solid rgb(31, 31, 31);
+  padding: 2px;
+  margin-bottom: 30px;
 }
 
-#e-list {
-  background-color: rgb(192, 184, 65);
-  border-width: 10px;
-  border-style: solid;
-  border-color: rgb(49, 136, 139);
-  padding: 25px;
-  margin: 10px;
-  text-emphasis: pink;
-
+#underAboutMe {
+  font-size: 1.3em;
+  font-family:monospace ;
 }

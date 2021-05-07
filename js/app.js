@@ -12,7 +12,7 @@ let arrayOfAnswers = [
   ['teriyaki', 'pho', 'thai', 'steak']
 ];
 let arrayOfQuestions = [
-  ['Do you think I like Cats? Please enter Yes or No','Do you think I like to Bake? Please enter Yes or No', 'Do I live in Bothell, WA? Please enter Yes or No','Do you think I like the outdoors? Please enter Yes or No', 'Do you think I have over 10 cats? Please enter Yes or No','Pick a Number Between 1 and 10', 'What do you think might be one of my favorite foods?']
+  ['Do you think I like Cats? Please enter Yes or No', 'Do you think I like to Bake? Please enter Yes or No', 'Do I live in Bothell, WA? Please enter Yes or No', 'Do you think I like the outdoors? Please enter Yes or No', 'Do you think I have over 10 cats? Please enter Yes or No', 'Pick a Number Between 1 and 10', 'What do you think might be one of my favorite foods?']
 ];
 let arrayOfReturns = [
   ['That\'s amazing! You are spot on!','I\'m so sorry you got this wrong... You must be a dog person huh...'],
@@ -115,10 +115,6 @@ function q6() {
 }
 q6();
 // 7th Question
-// function quickMessage(guess) {
-//   let message =
-// }
-
 // Six attempts
 function q7() {
   for (let o = 1; o <= 6; o++) { // Running 6 times for 6 total guesses
