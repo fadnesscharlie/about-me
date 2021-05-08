@@ -1,4 +1,6 @@
 
+/* Reference http://www.csszengarden.com/124/ */
+
 /* Just effecting the background of center page */
 @font-face {
   font-family: Dancing_Script;
@@ -134,3 +136,5 @@ main aside div ul li {
   font-size: 1.3em;
   font-family:monospace ;
 }
+
+
