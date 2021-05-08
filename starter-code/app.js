@@ -53,11 +53,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  let addedSum = sum(a, b, c)[0];
+  let addedSum = sum(a, b)[0];
   let addedSum2 = sum(addedSum, c)[0];
   // console.log(addedSum);
   // console.log(addedSum2);
-  let multiSum = multiply(a, b, c)[0];
+  let multiSum = multiply(a, b)[0];
   let multiSum2 = multiply(multiSum, c)[0];
   // console.log(multiSum);
   // console.log(multiSum2);
@@ -114,11 +114,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let multiSum = multiply(testArray[0], testArray[1]);
+  let multiSum2 = multiply(multiSum[0], testArray[2]);
+  // console.log(multiSum);
+  // console.log(multiSum2);
+  let message5 = `The numbers ${testArray} have a product of ${multiSum2[0]}.`;
+  // console.log(multiSum2[0], message5);
+  return [multiSum2[0], message5];
 }
-
+// 'The numbers 2,3,4 have a product of 24.'
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
