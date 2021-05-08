@@ -99,7 +99,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -152,11 +152,11 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   let multi = 1;
   for (let i = 0; i < dynamicArray.length; i++) {
     multi = multiply(dynamicArray[i], multi)[0];
-    console.log(multi);
+    // console.log(multi);
   }
   // console.log(multi);
   let message6 = `The numbers ${dynamicArray} have a product of ${multi}.`;
-  console.log(multi, message6);
+  // console.log(multi, message6);
   return [multi, message6];
 }
 
